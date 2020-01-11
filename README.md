@@ -4,6 +4,9 @@ Intended for use with online service such as Heroku. Additional webclients may b
 
 # Techniques/Tools used
 Requests library - downloading webpage
+
 Beautiful Soup - parsing webpage results
+
 SMTPlib - handling email 
+
 MIME - handling email header, subject, body, etc.
