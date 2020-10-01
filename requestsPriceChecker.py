@@ -25,8 +25,8 @@ while True:
         message = ('As of ' + str(now) + '\nregular price: ' + reg_price + "\nsale_price "  + sale_price)
         msg = MIMEMultipart()
 
-        msg['From'] = 'fioratheworst@gmail.com'
-        msg['To'] = "iitsalex@hotmail.com"
+        msg['From'] = 'from-email-here@gmail.com'
+        msg['To'] = "your-email-here@gmail.com"
         msg['Subject'] = "NovelKeys Box Pinks Price Adjustment!"
 
         msg.attach(MIMEText(message,'plain'))
@@ -35,7 +35,7 @@ while True:
         server = smtplib.SMTP('smtp.gmail.com', 587)
         server.starttls()
         # add my account login name and password,
-        server.login("fioratheworst@gmail.com", "fake-password")
+        server.login("your-email-here@gmail.com", "fake-password")
 
         # send the email
         server.send_message(msg)
